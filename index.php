@@ -1,4 +1,4 @@
-<?
+<?php
         function gerarsenha($tamanho,$upper,$lower,$number,$symbol){
             $up = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
             $lw = 'abcdefghijklmnopqrstuvwxyz';
@@ -41,7 +41,7 @@
             <h5 class='display-6'>Essa e sua senha <small>(a cada refresh uma nova senha)</small>:</h5>
         </div>
             <div class="mb-3">
-                <h2 class='display-2 text-center p-5 text-success'><? echo gerarsenha(7,true,true,true,true);?></h2>
+                <h2 class='display-2 text-center p-5 text-success'><?php echo gerarsenha(7,true,true,true,true);?></h2>
             </div>
     </div>
 </body>
